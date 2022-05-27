@@ -1,0 +1,75 @@
+.container {
+  display: inline-block;
+  border: 3px solid #99d3f8;
+  border-radius: 25px;
+  min-height: 500px;
+  padding: 0px 30px 30px 30px;
+  margin-top: 20px;
+}
+
+.container .insert {
+  display: inline-block;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .insert .text {
+  height: 100%;
+  border: none;
+  outline: 2px solid #99d3f8;
+  margin-right: 10px;
+}
+.container .insert .addbtn {
+  height: 100%;
+  border: 2px solid rgba(30, 22, 54, 0.7);
+  border-radius: 15%;
+  color: rgba(30, 22, 54, 0.7);
+  font-weight: bold;
+  box-shadow: rgba(30, 22, 54, 0.4);
+}
+.container .insert .addbtn:hover {
+  color: rgba(255, 255, 255, 0.85);
+  box-shadow: rgba(30, 22, 54, 0.7) 0 0px 0px 40px inset;
+}
+
+.container .list {
+  text-align: left;
+}
+
+.container .list .item {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  justify-content: space-between;
+}
+.container .list .item .item-checkbox {
+  margin-right: 10px;
+  width: 20px;
+  height: 15px;
+}
+
+.container .list .item .item-text {
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+.container .list .item .item-remove_btn {
+  border: none;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: white;
+}
+
+.container .list .item .item-remove_btn:hover {
+  background-color: rgba(30, 22, 54, 0.7);
+}
+
+.delete-line {
+  text-decoration: line-through;
+}
+
+.opacity_5 {
+  opacity: 0.5;
+}
