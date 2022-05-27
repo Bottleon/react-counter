@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useRef, useCallback } from "react";
-import TodoInsert from "TodoInsert";
-import TodoList from "TodoList";
-import TodoTitle from "TodoTitle";
-import "./Todo.css";
+import TodoInsert from "component/TodoInsert";
+import TodoList from "component/TodoList";
+import TodoTitle from "component/TodoTitle";
+import "css/Todo.css";
 
 const Todo = () => {
   const [todos, setTodos] = useState([]);
