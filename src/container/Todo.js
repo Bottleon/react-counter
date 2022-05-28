@@ -53,6 +53,20 @@ const Todo = () => {
     [todos]
   );
 
+  const onClickAddBtn = useCallback(() => {
+    if (input !== "") {
+      setTodos([
+        ...todos,
+        {
+          id: todoId.current++,
+          text: input,
+          done: false,
+        },
+      ]);
+      setInput("");
+    }
+  });
+
   useEffect(() => {
     console.log(todos);
   }, [todos]);
@@ -64,6 +78,7 @@ const Todo = () => {
         input={input}
         onChangeInput={onChangeInput}
         onKeyPress={onKeyPress}
+        onClickAddBtn={onClickAddBtn}
       />
       <TodoList todos={todos} onToggle={onToggle} onRemove={onRemove} />
     </div>

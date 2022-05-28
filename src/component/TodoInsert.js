@@ -1,6 +1,6 @@
 import React, { memo } from "react";
 
-const TodoInsert = ({ input, onChangeInput, onKeyPress }) => {
+const TodoInsert = ({ input, onChangeInput, onKeyPress, onClickAddBtn }) => {
   return (
     <div className={"insert"}>
       <input
@@ -12,7 +12,12 @@ const TodoInsert = ({ input, onChangeInput, onKeyPress }) => {
         onKeyPress={onKeyPress}
         autoFocus
       />
-      <input className={"addbtn"} type="button" value="추가" />
+      <input
+        className={"addbtn"}
+        onClick={onClickAddBtn}
+        type="button"
+        value="추가"
+      />
     </div>
   );
 };
