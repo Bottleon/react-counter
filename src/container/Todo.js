@@ -65,7 +65,7 @@ const Todo = () => {
       ]);
       setInput("");
     }
-  });
+  }, [input, todos]);
 
   useEffect(() => {
     console.log(todos);
